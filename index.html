@@ -4,14 +4,18 @@
     <title>My Git Project</title>
 </head>
 <body>
-    <h1>Halo Dunia Ku!</h1>
+    <h1>Halo Dunia Ku!</h1> 
     
     <form>
         <label for="nama">Nama Lengkap:</label><br>
-        <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda"><br><br>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required><br><br>
         
         <label for="nohp">Nomor HP:</label><br>
-        <input type="tel" id="nohp" name="nohp" placeholder="Contoh: 081234567890">
+        <!-- Ditambahkan pattern="[0-9]+" agar hanya bisa diisi angka -->
+        <input type="tel" id="nohp" name="nohp" placeholder="Contoh: 081234567890" pattern="[0-9]+" required><br><br>
+
+        <!-- Tombol Submit yang baru ditambahkan -->
+        <button type="submit">Kirim Data</button>
     </form>
 </body>
 </html>
